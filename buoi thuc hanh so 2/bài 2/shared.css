@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    position: absolute;
+    width:100%;
+    z-index: 10;
+} 
+#page-logo a{
+    font-family: "oleo script", cursive;
+    text-align: left;
+    color: yellowgreen;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight:bold;
+}  
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: "oleo script", cursive;
+}
+nav a:hover{
+    color: #ffeb3b;
+}
+footer{
+    background-color: black;
+    padding: 30px 0px;
+    border: 5px solid purple;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer img{
+    width: 30px;
+    height:30px;
+}
+footer img :hover{
+    transform: scale(1.2) ;
+}
