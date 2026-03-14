@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quản lý Điểm Sinh Viên</h1>
+    <div>
+        <label for="studentName">Họ Tên:</label>
+        <input type="text" id="studentName" placeholder="Nhập họ và tên">
+        <label for="studentScore">Điểm:</label>
+        <input type ="text" id="studentScore" placeholder="0-10" min = 0 max = 10>
+        <button id = "button">Thêm</button>
+    </div>
+    <br>
+    <table border="1" cellpadding = 10 cellspacing = 0>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ Tên</th>
+                <th>Điểm</th>
+                <th>Xếp Loại</th>
+                <th>Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+        </tbody>
+</body>
+<script src="ex1.js"></script>
+</html>

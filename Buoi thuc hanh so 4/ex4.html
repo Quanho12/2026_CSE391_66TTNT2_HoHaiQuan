@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đặt Hàng Trực Tuyến</title>
+</head>
+<body>
+
+    <h2>Đặt Hàng Trực Tuyến</h2>
+    
+    <form id="orderForm">
+        
+        <div>
+            <label>Sản phẩm:</label><br>
+            <select id="product">
+                <option value="">-- Chọn sản phẩm --</option>
+                <option value="T-shirt">Áo thun tay lỡ</option>
+                <option value="Jeans">Quần Jean ống rộng</option>
+                <option value="Jacket">Áo khoác Bomber</option>
+                <option value="Dress">Váy hoa nhí</option>
+                <option value="Sneaker">Giày Sneaker trắng</option>
+            </select>
+            <div id="productError"></div>
+        </div>
+        <br>
+        <br>
+
+        <div>
+            <label>Số lượng:</label><br>
+            <input type="number" id="quantity" min="1" max="99" placeholder="1 - 99">
+            <div id="quantityError"></div>
+        </div>
+        <br>
+
+        <div>
+            <label>Ngày giao hàng mong muốn:</label><br>
+            <input type="date" id="deliveryDate">
+            <div id="dateError"></div>
+        </div>
+        <br>
+
+        <div>
+            <label>Địa chỉ giao hàng:</label><br>
+            <textarea id="address" rows="3" minlength="10" placeholder="Tối thiểu 10 ký tự"></textarea>
+            <div id="addressError"></div>
+        </div>
+        <br>
+
+        <div>
+            <label>Ghi chú (Không bắt buộc):</label><br>
+            <textarea id="notes" rows="2" maxlength="200" placeholder="Tối đa 200 ký tự"></textarea>
+            <div id="notesError"></div>
+        </div>
+        <br>
+
+        <div>
+            <label>Phương thức thanh toán:</label><br>
+            <input type="radio" name="payment" value="COD" id="payCOD"> 
+            <label for="payCOD">Tiền mặt (COD)</label>
+            
+            <input type="radio" name="payment" value="Banking" id="payBanking"> 
+            <label for="payBanking">Chuyển khoản</label>
+            
+            <input type="radio" name="payment" value="E-wallet" id="payWallet"> 
+            <label for="payWallet">Ví điện tử</label>
+            
+            <div id="paymentError"></div>
+        </div>
+        <br>
+
+        <button type="submit">Xác nhận đặt hàng</button>
+
+    </form>
+<script src ="ex4.js"></script>
+</body>
+</html>

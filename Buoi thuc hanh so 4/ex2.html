@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quản lý Điểm Sinh Viên</h1>
+    <div>
+        <label for="studentName">Họ Tên:</label>
+        <input type="text" id="studentName" placeholder="Nhập họ và tên">
+        <label for="studentScore">Điểm:</label>
+        <input type ="text" id="studentScore" placeholder="0-10" min = 0 max = 10>
+        <button id = "button">Thêm</button>
+    </div>
+    <br>
+    <table border="1" cellpadding = 10 cellspacing = 0>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ Tên</th>
+                <th id = "sortScoreBtn" style = "cursor: pointer;">Điểm ↕</th>
+                <th>Xếp Loại</th>
+                <th>Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+        </tbody>
+        <div style= "margin-top: 15px; margin-bottom: 15px;">
+            <strong>Tìm Kiếm và Lọc</strong>
+            <input type="text" id="searchInput" placeholder="Nhập tên hoặc điểm để tìm kiếm">
+            <select id="filterRank">
+                <option value="All">-- Tất cả xếp loại --</option>
+                <option value="Giỏi">Giỏi</option>
+                <option value="Khá">Khá</option>
+                <option value="Trung bình">Trung bình</option>
+                <option value="Yếu">Yếu</option>
+            </select>
+        </div>
+    </table>
+</body>
+<script src="ex2.js"></script>
+</html>
